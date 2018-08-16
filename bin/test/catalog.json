@@ -1,0 +1,10 @@
+{
+    "destination" : ".\\build\\resources\\test\\destination",
+    "items" : [ 
+       { "path": "C:\\Users\\emanu\\Desktop"},
+       { "path": "C:\\Users\\emanu\\Downloads"}
+    ],
+    "exclusions" : [ 
+      "Thumbs.db"
+    ]
+}

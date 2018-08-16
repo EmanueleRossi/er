@@ -1,0 +1,13 @@
+{
+    "destination" : "d:\\",
+    "items" : [ 
+       { "path": "C:\\Users\\emanu\\Desktop"},
+       { "path": "C:\\Users\\emanu\\Documents"},
+       { "path": "C:\\Users\\emanu\\Downloads"},
+       { "path": "C:\\Users\\emanu\\Pictures"}
+    ],
+    "exclusions" : [ 
+      "Thumbs.db",
+      "desktop.ini"      
+    ]
+}
