@@ -2,8 +2,11 @@ package org.erossi.er.util;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 import org.apache.commons.codec.binary.Base64;
 
@@ -27,7 +30,7 @@ public enum HashTool {
         return name;
     }
 
-    public byte[] checksum(File input) throws Exception {
+    public byte[] checksum(File input) throws FileNotFoundException, NoSuchAlgorithmException, IOException {
         InputStream ins = new FileInputStream(input);        
         try {
             MessageDigest digest = MessageDigest.getInstance(getName());
@@ -42,7 +45,7 @@ public enum HashTool {
         }
     }
 
-    public String checksumBase64(File input) throws Exception {
+    public String checksumBase64(File input) throws FileNotFoundException, NoSuchAlgorithmException, IOException {
         byte[] response = this.checksum(input);
         return Base64.encodeBase64String(response);
     }

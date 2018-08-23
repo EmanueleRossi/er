@@ -38,7 +38,6 @@ public class ERTest {
         ER er = new ER();
         er.loadJSONCatalog(new File(".\\build\\resources\\test\\catalog.json"));
 
-        er.initBackupRegistry("erRegistry.xlsx");
         er.executeBackup();
 
         assertTrue(er.getCatalog().getDestination().list(new FilenameFilter() {
