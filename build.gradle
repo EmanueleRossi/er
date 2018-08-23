@@ -1,7 +1,6 @@
 plugins {
     id 'java'
     id 'application'
-    //id 'groovy'
 }
 
 mainClassName = 'org.erossi.er.ER'
@@ -12,6 +11,7 @@ dependencies {
     compile 'commons-io:commons-io:2.6'
     compile 'org.apache.poi:poi:3.17'
     compile 'org.apache.poi:poi-ooxml:3.17'
+    compile 'io.reactivex.rxjava2:rxjava:2.2.0'
 
     testCompile 'junit:junit:4.12'
 }
