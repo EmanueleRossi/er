@@ -1,8 +1,7 @@
 {
-    "destination" : ".\\build\\resources\\test\\destination",
+    "destination" : "build\\resources\\test\\destination",
     "items" : [ 
-       { "path": "C:\\Users\\emanu\\Desktop"},
-       { "path": "C:\\Users\\emanu\\Downloads"}
+       { "origin": "build\\resources\\test\\source"}
     ],
     "exclusions" : [ 
       "Thumbs.db"

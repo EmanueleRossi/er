@@ -19,34 +19,34 @@ public enum HashTool {
     private String name;
 
     HashTool() {
-        this.name = "SHA-256";
+      this.name = "SHA-256";
     }
 
     HashTool(String name) {
-        this.name = name;
+      this.name = name;
     }
 
     public String getName() {
-        return name;
+      return name;
     }
 
     public byte[] checksum(File input) throws FileNotFoundException, NoSuchAlgorithmException, IOException {
-        InputStream ins = new FileInputStream(input);        
-        try {
-            MessageDigest digest = MessageDigest.getInstance(getName());
-            byte[] block = new byte[4096];
-            int length;
-            while ((length = ins.read(block)) > 0) {
-                digest.update(block, 0, length);
-            }
-            return digest.digest();            
-        } finally {
-            ins.close();
+      InputStream ins = new FileInputStream(input);        
+      try {
+        MessageDigest digest = MessageDigest.getInstance(getName());
+        byte[] block = new byte[4096];
+        int length;
+        while ((length = ins.read(block)) > 0) {
+          digest.update(block, 0, length);
         }
+        return digest.digest();            
+      } finally {
+        ins.close();
+      }
     }
 
     public String checksumBase64(File input) throws FileNotFoundException, NoSuchAlgorithmException, IOException {
-        byte[] response = this.checksum(input);
-        return Base64.encodeBase64String(response);
+      byte[] response = this.checksum(input);
+      return Base64.encodeBase64String(response);
     }
 }

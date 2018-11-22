@@ -1,13 +1,14 @@
 {
-    "destination" : "d:\\",
-    "items" : [ 
-       { "path": "C:\\Users\\emanu\\Desktop"},
-       { "path": "C:\\Users\\emanu\\Documents"},
-       { "path": "C:\\Users\\emanu\\Downloads"},
-       { "path": "C:\\Users\\emanu\\Pictures"}
-    ],
-    "exclusions" : [ 
-      "Thumbs.db",
-      "desktop.ini"      
-    ]
+  "destination" : "E:\\bkp20181121",
+  "items" : [             
+    { "origin": "C:\\Users\\emanu\\Desktop" },
+    { "origin": "C:\\Users\\emanu\\Documents\\erossi" },
+    { "origin": "C:\\Users\\emanu\\Documents\\Gruppo GPI" },       
+    { "origin": "C:\\Users\\emanu\\Documents\\Sonia" },        
+    { "origin": "C:\\Users\\emanu\\Pictures" }    
+  ],
+  "exclusions" : [ 
+    "Thumbs.db",
+    "desktop.ini"
+  ]
 }
